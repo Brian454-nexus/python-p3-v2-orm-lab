@@ -193,4 +193,4 @@ class Employee:
             WHERE employee_id = ?
         """
         rows = CURSOR.execute(sql, (self.id,)).fetchall()
-        return [Review.instance_from_db(row) for row in rows]
+        return [Review.instance_from_db(row) for row in rows] 
